@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" />
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--link to swiperjs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"    />
+
+
+
+    <title>Document</title>
+
+</head>
+<body id="body">
+    <!--top-->
+
+    <img src="img/top p.PNG" class="top-p" id="top-p">
+
+
+    <!--search box-->
+
+    <section class="search-box" id="search-box">
+        <div class="right-search-box">
+            <img src="img/icons/unnamed.png" alt="">
+
+            <div class="search-boox">
+                <form action="">
+                    <i class="fa fa-search fa-2x" style="filter: invert(50%); "></i>
+                    <input type="text" placeholder="...جستو جو در دیجی کالا " style="text-align: right;">
+                </form>
+            </div>
+        </div>
+
+        <div class="left-search-box">
+            <div class="login-user">
+                <i class="fa fa-user fa-2x" aria-hidden="true"  style="filter: invert(40%); "></i>
+                <p>ورود به حساب کاربری</p>
+            </div>
+            <div class="buy">
+                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="filter: invert(40%); "></i>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--nav bar-->
+    <section class="s-nav" id="s-nav">
+
+        <div class="navbar">
+            <div class="right-nav">
+                <div class="dropdown" onmouseover="increase_opcity()" onmouseout="decrease_opcity()">
+                    <button class="dropbtn">
+                        <p>دسته بندی کالاها <i class="fa fa-bars"></i></p>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="links">
+                            <a href="#">خوراک </a>
+                            <a href="#">پوشاک</a>
+                            <a href="#">لوازم برقی</a> 
+                            <a href="#">لپ تاپ </a>
+                        </div>
+                        <div class="drop-img">
+                            <img src="img/drop-img3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown" onmouseover="increase_opcity()" onmouseout="decrease_opcity()">
+                    <button class="dropbtn">
+                        <p>سوپر مارکت  <i class="fa fa-shopping-basket"></i></p>
+                    </button>
+                    <div class="dropdown-content" style="right: 5%;">
+                        <div class="links">
+                            <a href="#">جوایز دیجی کالا
+                                <br>
+                                <p>جالبه بدونید که دیجی کالا هر چند وقت یکبار به شما مشتریان عزیز جایزه میده</p>
+                            </a>
+                            <a href="#">ماموریت های دیجی کالای</a>
+                            <a href="#">صفحه اصلی دیجی کال</a>
+                        </div>
+                        <div class="drop-img">
+                            <img src="img/drop-img1.PNG" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown" onmouseover="increase_opcity()" onmouseout="decrease_opcity()">
+                    <button class="dropbtn">
+                        <p>تخفیف ها و پیشنهاد ها <i class="fa fa-percent "></i></p>
+                    </button>
+                    <div class="dropdown-content" style="right: 10%;"">
+
+                        <div class="links">
+                            <a href="#">دیجیکالا </a>
+                            <a href="#">تخفیف شماره 1</a>
+                            <a href="#">تخفیف شماره 2</a>
+                        </div>
+                        <div class="drop-img">
+                            <img src="img/drop-img2.jpg" alt="" style="width: 400px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown" onmouseover="increase_opcity()" onmouseout="decrease_opcity()">
+                    <button class="dropbtn">
+                        <p>دیجی کالای من<i class="fa fa-caret-down "></i></p>
+                    </button>
+                    <div class="dropdown-content" style="right: 14%;">
+                        <div class="links">
+                            <a href="#">پرتال</a>
+                            <a href="#">خرید های من </a>
+                            <a href="#">تخفیف های من </a>
+                            <a href="#">کیف پول من: 22222222تومان </a>
+                        </div>
+                        <div class="drop-img">
+                            <img src="img/drop-img3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-nav-gps" >
+                <p>
+                    <p>شهر خود را وارد کنید <i class="fa fa-location"></i></p>       
+                </p>
+            </div>
+        </div>
+    </section>
+
+<section id="filter">
+
+    <!--content-->
+    <section class="content">
+        <img src="img/img -1.jpg" class="img1">
+
+        <div class="swiper-1">
+                
+            <div class="swiper-container" id="s4" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/swiper -1.PNG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/swiper -2.PNG"alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/swiper -3.PNG" alt="">
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination" id="s1"></div>
+                <div class="swiper-button-prev" id="s2"></div>
+                <div class="swiper-button-next"id="s3"></div>
+            </div>
+
+            <div class="left-swiper-1">
+                <img src="img/drop-img2.jpg" alt="" style="margin-bottom: 25px;">
+                <img src="img/drop-img2.jpg" alt="">
+            </div>
+        </div>        
+    </section>
+
+    <section class="red-line">
+        <div>
+        <img src="img/red-line.PNG" class="color-line-img">
+        <p class="under-page">مشاهده همه<i class="fa fa-chevron-left"></i></p>
+    </div>
+
+        <div class="swiper-container mySwiper" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/s-6.PNG" alt="">
+                    <p class="p1" >کفش روزمره مردانه  k.bs.211 </p>                    
+                    <div class="p2">
+                        <p >199,000</p>
+                        <span >51%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >99,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-2.PNG" alt="">
+                    <p class="p1" >مبدل Type-c به USB با سئوس مدل CAAOTG-01 </p>                    
+                    <div class="p2">
+                        <p >140,000</p>
+                        <span >30%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >98,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-3.PNG" alt="">
+                    <p class="p1" >انگشتر طلا 18 عیار زنانه نیوانی مدل NR016</p>                    
+                    <div class="p2">
+                        <p >1,310,000</p>
+                        <span >16%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >1,099,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-4.PNG" alt="">
+                    <p class="p1" >اسباب بازی برای شادی روان مدل K54-WZ </p>                    
+                    <div class="p2">
+                        <p >19,000</p>
+                        <span >10%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >15,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-6.PNG" alt="">
+                    <p class="p1" >کفش روزمره مردانه  k.bs.211 </p>                    
+                    <div class="p2">
+                        <p >199,000</p>
+                        <span >50%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >199,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-3.PNG" alt="">
+                    <p class="p1" >انگشتر طلا 18 عیار زنانه نیوانی مدل NR016</p>                    
+                    <div class="p2">
+                        <p >1,310,000</p>
+                        <span >16%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >1,099,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-2.PNG" alt="">
+                    <p class="p1" >مبدل Type-c به USB با سئوس مدل CAAOTG-01 </p>                    
+                    <div class="p2">
+                        <p >140,000</p>
+                        <span >30%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >98,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="img/s-5.PNG" alt="">
+                    <p class="p1" >ساعت مچی اصل, که آینده رو نشون میده:/ </p>                    
+                    <div class="p2">
+                        <p >300,000</p>
+                        <span >24%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >223,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+        </div>
+
+
+    <!--under red line-->
+
+    </section>
+    <section class="under-redline">
+        <img src="img/under-redline-1.jpg" alt="">
+        <img src="img/under-redline-2.png" alt="">
+        <img src="img/under-redline-3.jpg" alt="">
+        <img src="img/under-redline-4.jpg" id="s5">
+    </section>
+
+    <!--green line-->
+    <section class="green-line">
+        <div>
+        <img src="img/green-line.PNG" >
+        <p class="under-page">مشاهده همه<i class="fa fa-chevron-left"></i></p>
+    </div>
+
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/s-6.PNG" alt="">
+                    <p class="p1" >کفش روزمره مردانه  k.bs.211 </p>                    
+                    <div class="p2">
+                        <p >199,000</p>
+                        <span >51%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >99,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-2.PNG" alt="">
+                    <p class="p1" >مبدل Type-c به USB با سئوس مدل CAAOTG-01 </p>                    
+                    <div class="p2">
+                        <p >140,000</p>
+                        <span >30%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >98,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-3.PNG" alt="">
+                    <p class="p1" >انگشتر طلا 18 عیار زنانه نیوانی مدل NR016</p>                    
+                    <div class="p2">
+                        <p >1,310,000</p>
+                        <span >16%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >1,099,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-4.PNG" alt="">
+                    <p class="p1" >اسباب بازی برای شادی روان مدل K54-WZ </p>                    
+                    <div class="p2">
+                        <p >19,000</p>
+                        <span >10%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >15,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-6.PNG" alt="">
+                    <p class="p1" >کفش روزمره مردانه  k.bs.211 </p>                    
+                    <div class="p2">
+                        <p >199,000</p>
+                        <span >50%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >199,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-3.PNG" alt="">
+                    <p class="p1" >انگشتر طلا 18 عیار زنانه نیوانی مدل NR016</p>                    
+                    <div class="p2">
+                        <p >1,310,000</p>
+                        <span >16%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >1,099,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/s-2.PNG" alt="">
+                    <p class="p1" >مبدل Type-c به USB با سئوس مدل CAAOTG-01 </p>                    
+                    <div class="p2">
+                        <p >140,000</p>
+                        <span >30%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >98,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="img/s-5.PNG" alt="">
+                    <p class="p1" >ساعت مچی اصل, که آینده رو نشون میده:/ </p>                    
+                    <div class="p2">
+                        <p >300,000</p>
+                        <span >24%</span>
+                    </div>
+                    <div class="p3"> 
+                        <p >223,000</p> 
+                        <p style="width: 70px">تومان</p>
+                    </div>                
+                    <p class="clock"><i class="fa fa-clock" ></i>01:53:23</p>
+                </div>
+
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+        <!--under green line-->
+    <section class="under-green-line">
+        <img src="img/under-green-line-1.jpg" alt="">
+        <img src="img/under-green-line-2.jpg" id="s5">
+    </section>
+    
+            <!--ball swiper-->
+
+
+    <section class="ball-swiper">
+        <div class="right-ball-swiper">
+            <div class="top-text-ball-swiper" >
+                <h4>توپ</h4>
+                <p class="underline"> براساس باز دیدهای شما</p>
+                
+            </div>
+
+            <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/ball5.jpg" alt="">
+                    <p class="p1">    توپ فوتبال لاستیکی بتا مدل PSRG4                    </p>
+                    <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball1.jpg" alt="">
+                    <p class="p1">    توپ والیبال بتا مدل PVBR5-MKS سایز 5                    </p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball2.jpg" alt="">
+                    <p class="p1">    توپ فوتبال لاستیکی بتا مدل PSRG                    </p>
+                    <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball3.jpg" alt="">
+                    <p class="p1">    توپ والیبال بتا مدل PVBR5-MKS سایز 5
+                    </p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball1.jpg" alt="">
+                    <p class="p1">    توپ فوتبال بتا مدل 0001                    </p>
+                    <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball2.jpg" alt="">
+                    <p class="p1">    توپ والیبال مدل V200W                    </p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball3.jpg" alt="">
+                    <p class="p1">    توپ فوتبال بتا مدل 0001
+                    </p>
+                    <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/ball4.jpg" alt="">
+                    <p class="p1">    توپ والیبال مدل V200W                    </p>
+                    <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="left-ball-swiper">
+            <p class="p1">پیشنهاد های لحظه ای برای شما</p>
+            <img src="img/left-ball-swiper.PNG" alt="">
+            <p class="p2">کابل تبدیل usb به otg </p>
+            <p class="p3">79,000 تومان </p>
+        </div>
+    </section>
+
+    <img src="img/top cabl swiper.PNG" class="top-cable-swiper">
+
+
+
+    <section class="ball-swiper">
+        <div class="personalize">
+            <img src="img/personaliz.PNG" alt="">
+
+            <h3 class="p1"> شخصی‌سازی پیشنهادها!</h3>
+            <p class="p2">برای مشاهده پیشنهادهای مناسب خود و همچنین داشتن تجربه بهتر لطفا وارد حساب کاربری شوید. </p>
+            <p class="p3">ورود به حساب دیجی کالا <i class="fa fa-sign-in-alt" ></i></p>
+        </div>
+
+        <div class="right-ball-swiper">
+            <div class="top-text-ball-swiper" >
+                <h4>کابل و مبدل</h4>
+                <p class="underline"> براساس باز دیدهای شما</p>
+                
+            </div>
+
+            <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/cabl1.PNG" alt="">
+                    <p class="p1">کابل تبدیل USB به microUSB بیوشی</p>
+                    <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl2.PNG" alt="">
+                    <p class="p1">کابل شارژ USB به USB-C بیوشی مدل A21</p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl3.PNG" alt="">
+                    <p class="p1">کابل تبدیل USB به microUSB بیوشی</p>
+                    <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl4.PNG" alt="">
+                    <p class="p1">کابل شارژ USB به USB-C بیوشی مدل A21</p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl5.PNG" alt="">
+                    <p class="p1">کابل تبدیل USB به microUSB بیوشی</p>
+                    <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl6.PNG" alt="">
+                    <p class="p1">کابل شارژ USB به USB-C بیوشی مدل A21</p>
+                    <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl7.PNG" alt="">
+                    <p class="p1">کابل تبدیل USB به microUSB بیوشی</p>
+                    <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cabl3.PNG" alt="">
+                    <p class="p1">کابل شارژ USB به USB-C بیوشی مدل A21</p>
+                    <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--becuse .under red line is same this section i use the same class-->
+
+<section class="under-redline">
+    <img src="img/top-swiper-goshi.jpg" >
+    <img src="img/top-swiper-goshi1.jpg" >
+    <img src="img/top-swiper-goshi2.jpg" >
+    <img src="img/top-swiper-goshi3.jpg" id="s5" >
+</section>
+<!--section goshi-->
+
+<section class="ball-swiper">
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" >
+            <h4>گوشی موبایل</h4>
+            <p class="underline"> براساس باز دیدهای شما</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/goshi1.PNG" alt="">
+                <p class="p1">گوشی موبایل سامسونگ مدل Galaxy A21s SM-A2117F</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi2.PNG" alt="">
+                <p class="p1">گوشی موبایل شیائومی مدل Redmi note 10</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi3.PNG" alt="">
+                <p class="p1">گوشی موبایل سامسونگ مدل Galaxy A21s SM-A2117F</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi1.PNG" alt="">
+                <p class="p1">گوشی موبایل شیائومی مدل Redmi note 10</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi4.PNG" alt="">
+                <p class="p1">گوشی موبایل سامسونگ مدل Galaxy A21s SM-A2117F</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi1.PNG" alt="">
+                <p class="p1">گوشی موبایل شیائومی مدل Redmi note 10</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi2.PNG" alt="">
+                <p class="p1">گوشی موبایل سامسونگ مدل Galaxy A21s SM-A2117F</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/goshi3.PNG" alt="">
+                <p class="p1">گوشی موبایل شیائومی مدل Redmi note 10</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section><!---->
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" >
+            <h4> هواکش</h4>
+            <p class="underline"> براساس باز دیدهای شما</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" id="myswiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/hava1.PNG" alt="">
+                <p class="p1">هواکش خانگی مدل VMA-15C2S</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava2.PNG" alt="">
+                <p class="p1">هواکش صنعتی هفت پره فلزی دمنده سری VIK-60Z4S</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava3.PNG" alt="">
+                <p class="p1">هواکش خانگی مدل VMA-15C2S</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava4.PNG" alt="">
+                <p class="p1">هواکش صنعتی هفت پره فلزی دمنده سری VIK-60Z4S</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava1.PNG" alt="">
+                <p class="p1">هواکش خانگی مدل VMA-15C2S</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava2.PNG" alt="">
+                <p class="p1">هواکش صنعتی هفت پره فلزی دمنده سری VIK-60Z4S</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava3.PNG" alt="">
+                <p class="p1">هواکش خانگی مدل VMA-15C2S</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hava2.PNG" alt="">
+                <p class="p1">هواکش صنعتی هفت پره فلزی دمنده سری VIK-60Z4S</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+<!--blew swiper goshi-->
+<section class="blew-swiper-line">
+    <img src="img/blew-swiper-goshi1.jpg" alt="">
+    <img src="img/blew-swiper-goshi2.jpg" id="s5">
+</section>
+
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" >
+            <h4>لامپ و پروژکتور SMD</h4>
+            <p class="underline"> براساس باز دیدهای شما</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" id="myswiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/LAMP5.PNG" >
+                <p class="p1">چراغ قوه مدل E30</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP2.PNG" alt="">
+                <p class="p1">چراغ قوه دستی مدل TV21</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP3.PNG" alt="">
+                <p class="p1">چراغ فانوسی شارژی کمپینگ و شارژر </p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP4.PNG" alt="">
+                <p class="p1">چراغ قوه شارژی مدل USB charging</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP5.PNG" alt="">
+                <p class="p1">چراغ قوه کمپینگ شارژی مدل خورشیدی</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP1.PNG" alt="">
+                <p class="p1">چراغ قوه مدل E30</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP2.PNG" alt="">
+                <p class="p1">چراغ قوه دستی مدل TV21</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/LAMP3.PNG" alt="">
+                <p class="p1">چراغ فانوسی شارژی کمپینگ و شارژر </p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" >
+            <h4>کتاب چاپی</h4>
+            <p class="underline"> براساس باز دیدهای شما</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/ketab.PNG" alt="">
+                <p class="p1">کتاب پاستیل های بنفش اثر کاتریک</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab1.PNG" alt="">
+                <p class="p1">کتاب صد سال تنهایی اثر گابریل خودمون </p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab2.PNG" alt="">
+                <p class="p1">دفتر نت موسیقی 50 برگ کتاب سنتر</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab3.PNG" alt="">
+                <p class="p1">دفتر نت موسیقی 15 برگ کتاب سنتر</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab4.PNG" alt="">
+                <p class="p1">کتاب مشتی و خیلی خوب اثر کاتریک</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab1.PNG" alt="">
+                <p class="p1">کتاب صد سال تنهایی اثر گابریل خودمون </p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab2.PNG" alt="">
+                <p class="p1">کتاب خیلی خوب اثر کاتریک</p>
+
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ketab3.PNG" alt="">
+                <p class="p1">کتاب صد سال تنهایی اثر گابریل خودمون </p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" id="swiper-wrapper-margintop">
+            <p class="underline"> محصولات پربازدید اخیر</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" id="myswiper2">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide">
+                <img src="img/کفش1.PNG" alt="">
+                <p class="p1">کفش مخصوص پیاده روی زنانه کد 4332</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش2.PNG" alt="">
+                <p class="p1">کفش مردانه مخصوص ورزش کد 8798 </p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش5.PNG" alt="">
+                <p class="p1">کفش راحتی زنانه مدل 654821</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش4.PNG" alt="">
+                <p class="p1">کفش مخصوص پیاده روی زنانه کد 4332</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش3.PNG" alt="">
+                <p class="p1">کفش مردانه مخصوص ورزش کد 8798 </p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش5.PNG" alt="">
+                <p class="p1">کفش مخصوص پیاده روی زنانه کد 4332</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش1.PNG" alt="">
+                <p class="p1">کفش مردانه مخصوص ورزش کد 8798 </p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/کفش3.PNG" alt="">
+                <p class="p1">کفش مخصوص پیاده روی زنانه کد 4332</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+<img src="img/img2.jpg" class="panir">
+
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" id="swiper-wrapper-margintop">
+            <p class="underline"> منتخب جددید ترین کالاها</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" id="myswiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/chaqo1.PNG" alt="">
+                <p class="p1">چاقو سفری تاشو مدل Bone 01</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo2.PNG" alt="">
+                <p class="p1">چاقو تاشو آرت مدل key </p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo3.PNG" alt="">
+                <p class="p1">چاقو سفر  کد 254</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chqo4.PNG" alt="">
+                <p class="p1">چاقو سفری تاشو مدل Bone 01</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo5.PNG" alt="">
+                <p class="p1">چاقو تاشو آرت مدل key </p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo1.PNG" alt="">
+                <p class="p1">چاقو سفری تاشو مدل Bone 01</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo2.PNG" alt="">
+                <p class="p1">چاقو تاشو آرت مدل key </p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/chaqo3.PNG" alt="">
+                <p class="p1">چاقو سفری تاشو مدل Bone 01</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" id="swiper-wrapper-margintop">
+            <p class="underline"> محصولات پرفروش اخیر</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/hedfon1.PNG" alt="">
+                <p class="p1">هدفون مدل in-Ear Fit</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon2.PNG" alt="">
+                <p class="p1">هدفون بی سیم شیائومی مدل 5422</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon3.PNG" alt="">
+                <p class="p1">هدفون مدل in-Ear Fit</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon4.PNG" alt="">
+                <p class="p1">هدفون بی سیم شیائومی مدل 5422</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon5.PNG" alt="">
+                <p class="p1">هدفون مدل in-Ear Fit</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon1.PNG" alt="">
+                <p class="p1">هدفون بی سیم شیائومی مدل 5422</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon2.PNG" alt="">
+                <p class="p1">هدفون مدل in-Ear Fit</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hedfon5.PNG" alt="">
+                <p class="p1">هدفون بی سیم شیائومی مدل 5422</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="brands" >
+
+    <div class="brands-swiper3" >
+        <div class="top-text-ball-swiper" id="swiper-wrapper-margintop">
+            <p class="underline-d">برند های ویژه</p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/brand1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand9.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/brand10.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<section class="ball-swiper" >
+
+    <div class="right-ball-swiper2" >
+        <div class="top-text-ball-swiper" id="swiper-wrapper-margintop">
+            <p class="underline">  محصولات تخفیف دار </p>
+            
+        </div>
+
+        <div class="swiper-container mySwiper2" id="myswiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/مودم1.PNG" alt="">
+                <p class="p1">مودم روتر ADSL2 PLUS بی سیم N300</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم2.PNG" alt="">
+                <p class="p1">مودم روتر VDSL/ADSL تی پی لینک مدل TD</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم3.PNG" alt="">
+                <p class="p1">مودم روتر ADSL2 PLUS بی سیم N300</p>
+                <p class="p2">  ۳۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم4.PNG" alt="">
+                <p class="p1">مودم روتر VDSL/ADSL تی پی لینک مدل TD</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mondem5.PNG" alt="">
+                <p class="p1">مودم روتر ADSL2 PLUS بی سیم N300</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم1.PNG" alt="">
+                <p class="p1">مودم روتر VDSL/ADSL تی پی لینک مدل TD</p>
+                <p class="p2">  ۱۰۸,۸۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم2.PNG" alt="">
+                <p class="p1">مودم روتر ADSL2 PLUS بی سیم N300</p>
+                <p class="p2">  ۵۱,۰۰۰ تومان      </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/مودم3.PNG" alt="">
+                <p class="p1">مودم روتر VDSL/ADSL تی پی لینک مدل TD</p>
+                <p class="p2">  ۴۵,۰۰۰ تومان      </p>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer" >
+    <div class="top-footer">
+        <div class="toggle"> 
+            <img src="img/icons/unnamed.png" alt="">
+            <p onclick="tap_to_top()">بازگشت به بالا <i class="fa fa-toggle-up"></i></p>
+        </div>
+        <div class="phone-number">
+            <p>تلفن پشتیبانی</p>
+            <p class="vertical-line">021 - 12345678</p>
+            <p> هفت روز هفته، 24 ساعت شبانه روز پاسخگوی شما هستیم.</p>
+        </div>
+        <div class="service">
+            <img src="img/service1.PNG" alt="">
+            <img src="img/service3.PNG" alt="">
+            <img src="img/service2.PNG" alt="">
+            <img src="img/service5.PNG" alt="">
+            <img src="img/service4.PNG" alt="">
+
+        </div>
+    </div>
+    <div class="middle-footer">
+        <div>
+            <h4>با دیجی کالا</h4>
+            <p>درباره دیجی کالا</p>
+            <p>فروش در دیجی کالا</p>
+            <p>فرصت های شغلی</p>
+            <p>تماس با دیجی کالا</p>
+            <p>درباره دیجی کالا</p>
+        </div>
+        <div>
+            <h4>خدمات مشتریان</h4>
+            <p>پاسخ به پرسش های متداول</p>
+            <p>رویه های بازگرداندن کالا</p>
+            <p>شرایط استفاده</p>
+            <p>حریم خصوصی</p>
+            <p>گزارش باگ</p>
+        </div>
+        <div>
+            <h4>راهنمای خرید از دیجی کالا</h4>
+            <p>نحوه ثبت سفارش</p>
+            <p>رویه ارسال سفارش</p>
+            <p>شیوه های پرداخت</p>
+        </div>
+        <div>
+            <h4>باما همراه باشید.</h4>
+            <div>
+                <img src="img/icons/instagram.png" alt="">
+                <img src="img/icons/twitter.png" alt="">
+                <img src="img/icons/diaphragm.png" alt="">
+                <img src="img/icons/linkedin.png" alt="">
+            </div>
+            <h4>
+                از جدید ترین تخفیف ها باخبر شوید
+            </h4>
+            <input type="text" onkeydown="update()" placeholder="متن خود را وارد کنید" id="placeholder" >
+            <p id="btn-set">ثبت</p>
+        </div>
+        <div class="download-link">
+            <p class="diji-smil"> 
+                <img src="img/diji-smil.PNG" >
+                دانلود اپلیکیشن دیجی کالا
+            </p>
+            <div class="img">
+                <img src="img/download-link2.PNG" alt="">
+                <img src="img/download-link4.png" alt="">
+                <img src="img/download-link1.PNG" alt="">
+                <img src="img/download-link3.PNG" alt="">
+                <span class="three">. . . </span>
+            </div>
+        </div>
+        <div class="neshans">
+            <div class="neshan"><img src="img/neshan1.PNG" alt=""></div>
+            <div class="neshan"><img src="img/neshan2.PNG" alt=""></div>
+            <div class="neshan"><img src="img/neshan3.PNG" alt=""></div>
+
+        </div>
+        <div class="text">
+            <p id="main_text"> دیجی‌کالا به عنوان یکی از قدیمی‌ترین 
+                فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی 
+                به سه اصل، پرداخت در محل، ۷ روز ضمانت بازگشت کالا و 
+                تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های 
+                معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران
+                تبدیل شود. به محض ورود به سایت دیجی‌کالا با دنیایی
+                از کالا رو به رو می‌شوید! هر آنچه که نیاز دارید و
+                .به ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد
+                <h4 id="more_text">حتی زمانی که بین خرید کالاها برای شخصی مردد 
+                    هستید می‌توانید با خرید کارت هدیه دیجی کالا ، انتخاب را به 
+                    سایرین بسپارید. این فروشگاه مثل یک ویترین پر زرق و برق 
+                    است که با انواع و اقسام محصولاتی نظیر گوشی موبایل سامسونگ ، 
+                    ساعت هوشمند اپل ، تلویزیون سامسونگ ، لپ تاپ و الترابوک 
+                    ایسوس ، گوشی موبایل هواوی و همچنین محصولاتی که هر فرد در 
+                    زندگی شخصی، تحصیلی و کاری خود به آنها احتیاج پیدا می‌کند، 
+                    چیده شده است. اینجا مرجع متنوع‌ترین کالاهای مصرفی از گوشی 
+                    موبایل موتورولا گرفته تا تبلت لنوو ، اتو پاناسونیک ، جارو 
+                    شارژی بلک اند دکر ، کولر آبی آبسال ، اسپیکر (بلندگو) جی 
+                    بی ال و حتی خرید لوازم جهیزیه می‌باشد. دیجی‌کالا همچنین یک 
+                    بازار آنلاین برای خرید جدیدترین و ضروری‌ترین لوازم خانگی 
+                    همانند سرخ کن فیلیپس ، یخچال و فریزر امرسان ، جاروبرقی 
+                    پارس خزر ، آبمیوه گیری بوش ، سینمای خانگی و ساندبار 
+                    سونی و انواع پخش کننده خانگی می‌باشد تا هر فرد بتواند 
+                    مطابق با سلیقه شخصی خود، خانه رویاهایش را بسازد. حتی 
+                    می‌توانید از مشهورترین برندهای داخلی و خارجی انواع 
+                    مدل مانتو جدید ، لباس خواب زنانه ، پیراهن 
+                    مردانه ، پیراهن و لباس مجلسی زنانه ، لباس بچه گانه 
+                    ، شومیز زنانه و دخترانه و انواع لباس زیر مردانه 
+                    را به صورت آنلاین با کمک راهنمای سایز خریداری کنید. 
+                    این فروشگاه اینترنتی حتی برای سرگرمی کودکان هم خرید 
+                    محصولاتی مانند عروسک ، مدل‌های اسباب بازی دخترانه و 
+                    پسرانه و انواع لگو را فراهم کرده است. همچنین با سر 
+                    زدن به محصولات آرایشی و بهداشتی زنانه و مردانه مانند 
+                    عطر و ادکلن دیور ، لالیک ، جگوار ، گرلن اصل ، انواع 
+                    دستگاه اصلاح موی صورت فیلیپس ، موزر ، پاناسونیک و 
+                    حتی بهترین برندهای رنگ مو و ابرو می‌توانید تجربه‌ای 
+                    جدید از خرید آنلاین کسب کنید. شما می توانید کلیه 
+                    نیازهای خود را تنها با چند کلیک سفارش داده 
+                    .و در کمترین زمان ممکن درب منزل تحویل بگیرید.</h4>
+                    <p id="more_btn" onclick="myfuc()">مشاهده بیشتر  </p>
+            </p>
+        </div>
+    </div>
+    <div id="end--footer">
+        <div id="end_footer">
+            <div class="end-footer-text">
+                <p>استفاده از مطالب فروشگاه اینترنتی دیجی کالا فقط بای مقاصد غیر تجاری و با ذکر منبع بلامانع اس . کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه(فروشگاه آنلاین دیجی کالا) می باشد.</p>
+            </div>
+        </div>
+        <div class="svg-end-footer">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+            <img src="img/footer1.svg" alt="">
+
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+<!-- script blew is for color line swiper-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
