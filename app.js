@@ -1,3 +1,17 @@
+let status_scroll=0;
+var nav = document.getElementById("s-nav");
+
+function galtak(){      
+    nav.style.marginTop="0";
+    if(status_scroll>window.pageYOffset){
+    nav.style.position="fixed"
+    nav.style.marginTop="65px";
+    nav.style.transition="all .3s";
+
+    }
+    status_scroll=window.pageYOffset
+}
+
 
 var placeholder = document.getElementById("placeholder");
 var btn_set=document.getElementById('btn-set');

@@ -31,7 +31,17 @@ body{
     background-color: #f1f1f1;
     direction: rtl;
     color: #484747;
+    scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 /*                    top                 */
 .top-p{
     
@@ -148,6 +158,13 @@ body{
 }
 
 /*                nav                     */
+
+.s-nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 .navbar {
     position: relative;
