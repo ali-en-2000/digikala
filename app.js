@@ -34,7 +34,7 @@ function tap_to_top(){
 var filter=document.getElementById('filter');
 
 function increase_opcity(){
-    filter.style.opacity=".5";
+    filter.style.opacity=".7";
     filter.style.transition="all .3s"
     
 }function decrease_opcity(){
