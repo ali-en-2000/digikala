@@ -258,6 +258,10 @@ body{
     width: 95%;
 
 }
+.auto-swipper{
+    width: 65%;
+    overflow: hidden;
+}
 .swiper-container{
     width: 65%;
 }
@@ -1084,6 +1088,42 @@ width: 35%;
     height: 50px;
     z-index: 10000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 

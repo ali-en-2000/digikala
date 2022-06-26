@@ -68,16 +68,18 @@ function increase_opcity(){
 
 
     //      first swiper
-        const swiper1 = new Swiper('#s4', {
-            loop: true,
-            pagination: {
-                el: '#s1',
-            },
-            navigation: {
-                nextEl: '#s3',
-                prevEl: '#s2',
-            },
-        });
+
+
+    var swiper = new Swiper("#s4", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        },
+      );
+
     
 
 
