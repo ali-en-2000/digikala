@@ -320,7 +320,10 @@ width: 35%;
 
 
 /*     red line swiper  */
-.swiper-slide{
+.red-line .swiper-container{
+    overflow: hidden;
+}
+ .swiper-slide{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
@@ -481,6 +484,10 @@ width: 35%;
     left: 1.5%;
     padding-top: 10px;
 }
+.green-line .swiper-container{
+    /* display: none; */
+    overflow: hidden;
+}
 
 
 
@@ -546,6 +553,7 @@ width: 35%;
     background: rgb(192, 192, 192);
     }
 .right-ball-swiper {
+    position: relative;
     overflow: hidden;
     background-color: #ffffff;
     width: 80%;
@@ -554,6 +562,7 @@ width: 35%;
 }
 
 .right-ball-swiper .mySwiper1 {
+    
     width: 100%;
     height: 76%;
     padding:2% 0 2% 0;
@@ -600,8 +609,7 @@ width: 35%;
 }
 
 .left-ball-swiper{
-    position: absolute;
-    left: 0;
+    margin-right:2%;
     width: 18%;
     height: 400px;
     text-align: center;
@@ -616,12 +624,10 @@ width: 35%;
 }
 .left-ball-swiper .p2{
     text-align: start;
-    position: absolute;
     bottom: 100px;
 
 }
 .left-ball-swiper .p3{
-    position: absolute;
     width: 100%;
     text-align: end;
     bottom: 30px;
@@ -1088,7 +1094,9 @@ width: 35%;
     height: 50px;
     z-index: 10000;
 }
-
+.swiper-notification{
+    display: none;
+}
 
 
 
