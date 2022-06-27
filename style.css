@@ -50,15 +50,6 @@ body {
     /* Firefox */
 }
 
-/*                    top                 */
-.top-p {
-
-    width: 100%;
-    height: 65px;
-    object-fit: cover;
-}
-
-
 
 /*                    search box                */
 .search-box p {
@@ -181,15 +172,18 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
+    box-shadow: 5px 5px 15px #dfdfdf7e;
+    padding: 0px;
+
 }
 
 .navbar {
     position: relative;
     font-family: Arial;
-    height: 55px;
     align-items: center;
     display: flex;
-    padding: 0 10px;
+    height: 65px;
+    padding: 10px 0 10px;
     justify-content: space-between;
     background-color: #ffffff;
 
@@ -208,8 +202,9 @@ body {
 .navbar p {
     margin: auto;
     display: flex;
-    font-size: 16px;
+    font-size: .9rem;
     width: 120%;
+    color: rgba(36, 36, 36, 0.799);
 }
 
 .navbar p i {
@@ -296,7 +291,7 @@ body {
     position: relative;
     width: 95%;
     height: 150px;
-    margin: 0 2.5%;
+    margin: 2.5%;
     cursor: pointer;
     object-fit: cover;
     border-radius: 10px;
@@ -715,21 +710,17 @@ p {
 }
 
 .left-ball-swiper .p1 {
-    padding: 8%;
     margin-top: 5px;
 }
 
 .left-ball-swiper .p2 {
-    text-align: start;
     bottom: 100px;
 
 }
 
 .left-ball-swiper .p3 {
     width: 100%;
-    text-align: end;
     bottom: 30px;
-    left: 10px;
 }
 
 .left-ball-swiper img {
@@ -1082,7 +1073,7 @@ p {
 
 .middle-footer input:focus,
 input::placeholder {
-    color: #000000;
+    color: #868585d1;
     outline: none;
     padding-right: 3px;
 }
@@ -1200,6 +1191,7 @@ input::placeholder {
     display: none;
     margin: -2px 2% 0 0;
     background-color: #fff;
+    color: rgba(59, 59, 59, 0.749);
 
 
 }
@@ -1313,6 +1305,14 @@ input::placeholder {
     .left-search-box .login-user {
         padding: 5px;
     }
+    .left-search-box .login-user i{
+        margin-top: 8px;
+        font-size: 1.4rem;
+    }
+        .left-search-box .login-user p {
+        margin-top: 10px;
+        font-size: .7rem;
+    }
 
     .img1 {
         position: relative;
@@ -1330,8 +1330,12 @@ input::placeholder {
 
     .s-nav {
         margin-bottom: 20px;
+        padding-top: 10px;
     }
 
+    #filter{
+        margin-top: 20px;
+    }
     /*   picture and swiper top of red line  */
     .content {
         margin: 0 25px;
@@ -1411,7 +1415,6 @@ input::placeholder {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
     /*   search box  */
     .search-box {
         width: 100%;
@@ -1425,12 +1428,13 @@ input::placeholder {
     .right-search-box .search-boox,
     .right-search-box img,
     .left-search-box,
-    .login-user,
-    .login-user p {
+    .login-user
+    {
 
         font-size: 11px;
         max-height: 35px;
     }
+
 
     .right-search-box img {
         width: 110px;
@@ -1445,8 +1449,8 @@ input::placeholder {
     }
 
     .left-search-box .login-user p {
-        margin-top: 10px;
-        font-size: .7rem;
+        margin-top: 20px;
+        font-size: .5rem;
     }
 
     .left-search-box .login-user {
@@ -1487,6 +1491,9 @@ input::placeholder {
 
         width: 600px;
 
+    }
+    .navbar p{
+        font-size: .7rem;
     }
 
     /*   picture and swiper top of red line  */
@@ -1530,10 +1537,11 @@ input::placeholder {
     }
 
     /*   under red line  */
-.green-line,
-.under-green-line{
-    display: none;
-}
+    .green-line,
+    .under-green-line {
+        display: none;
+    }
+
     .under-redline {
         position: relative;
         display: flex;
@@ -1590,14 +1598,14 @@ input::placeholder {
     .personalize>* {
         margin-top: 15%;
     }
+    .top-text-ball-swiper .underline::before ,
+        .top-text-ball-swiper .underline::after {
+  
+        display: none;
 
-    .top-text-ball-swiper .underline::before {
-        width: 80%;
     }
+    
 
-    .underline-d::before {
-        width: 83%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1657,7 +1665,7 @@ input::placeholder {
     }
 
     .s-nav {
-        box-shadow: 5px 5px 15px #dfdfdfba;
+        padding-top: 10px;
     }
 
     .navbar {
@@ -1712,7 +1720,6 @@ input::placeholder {
         font-size: .5rem;
     }
 
-    #top-p,
     .underline,
     .footer .top-footer .phone-number p:nth-child(3),
     .vertical-line::after,
@@ -1720,7 +1727,8 @@ input::placeholder {
     .green-line,
     .delet-in-screen-mobile,
     .right-ball-swiper,
-    .under-green-line {
+    .under-green-line,
+    .dropdown-content {
         display: none;
     }
 
@@ -1786,25 +1794,35 @@ input::placeholder {
         width: 20px;
 
     }
+
+    .dropdown-content {
+        display: none;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    
 }
 
 
 
 @media only screen and (max-width: 490px) {
 
-.img1,
-.s-nav,
-.delet-in-screen-mobile,
-.search-box form
+    .img1,
+    .s-nav,
+    .delet-in-screen-mobile,
+    .search-box form {
+        display: none;
+    }
 
-{
-    display: none;
-}
-.left-search-box{
-    width: 50%;
-}
-.right-search-box{
-    width: 50%;
-}
+    .left-search-box {
+        width: 50%;
+    }
+
+    .right-search-box {
+        width: 50%;
+    }
 
 }
