@@ -1,14 +1,19 @@
 let status_scroll=0;
 var nav = document.getElementById("s-nav");
+var content = document.getElementById("filter");
+document.addEventListener("scroll", galtak);
 
-function galtak(){      
+ function galtak(){      
     nav.style.marginTop="0";
     if(status_scroll>window.pageYOffset){
     nav.style.position="fixed"
     nav.style.marginTop="65px";
     nav.style.transition="all .3s";
-
+    if(window_width>768 && window_width<1024){
+        nav.style.marginTop="53px";    
+        }
     }
+
     status_scroll=window.pageYOffset
 }
 
