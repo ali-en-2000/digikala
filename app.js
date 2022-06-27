@@ -113,19 +113,28 @@ var swiper = new Swiper("#s4", {
 
 ///         for color line swiper
 var window_width = window.innerWidth;
+var green = document.getElementById("green-line");
+var red = document.getElementById("red-line");
 
 var preview = 3;
-if (window_width >= 1632) {
+if (
+    window_width > 1500 
+) {
     var preview = 5;
-} else if (window_width >= 1215) {
-    preview = 4;
-} else if (window_width >= 900) {
-    preview = 3;
-} else if (window_width >= 750) {
-    preview = 2;
-} else if (window_width >= 100 || window_width <= 750) {
-    preview = 2;
+} if (
+    window_width <= 1500 &&
+    window_width >= 1200
+) {
+    var preview = 4;
+} else if (
+    green.style.display !== "none" &&
+    red.style.display !== "none" &&
+    window_width >= 768 &&
+    window_width <= 900
+) {
+    var preview = 2;
 }
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: preview,
     spaceBetween: 10,
@@ -143,14 +152,14 @@ var swiper = new Swiper(".mySwiper", {
 
 
 ///      for last model swiper
-var previev;
-if (window_width >= 1000) {
-    previev = 4;
-} else if (window_width >= 750) {
-    previev = 3;
-} else if (window_width >= 100 || window_width <= 750) {
-    preview = 3;
-}
+var previev = 3;
+// if (window_width >= 1000) {
+//     previev = 4;
+// } else if (window_width >= 750) {
+//     previev = 3;
+// } else if (window_width <= 500) {
+//     previev = 2;
+// }
 
 var swiper = new Swiper(".mySwiper1", {
     slidesPerView: previev,
@@ -172,10 +181,10 @@ if (window_width >= 1000) {
     preViw = 4;
 } else if (window_width >= 600) {
     preViw = 3;
-} else if (window_width >= 450) {
+} else if (window_width >= 500) {
     preViw = 3;
 } else if (window_width >= 280) {
-    preViw = 3;
+    preViw = 2;
 }
 
 var swiper = new Swiper(".mySwiper2", {
